@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\Resources_GT\\TCP\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{DCA67AB3-F07F-4BE6-AE5A-3852332A84B5}|TCP_Client\\TCP_Client.vcxproj|D:\\Resources_GT\\TCP\\TCP_Client\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{DCA67AB3-F07F-4BE6-AE5A-3852332A84B5}|TCP_Client\\TCP_Client.vcxproj|solutionrelative:TCP_Client\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{47AC9E6C-779D-49B0-8C59-3C2B832CFA33}|TCP.vcxproj|D:\\Resources_GT\\TCP\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{47AC9E6C-779D-49B0-8C59-3C2B832CFA33}|TCP.vcxproj|solutionrelative:main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{557FB334-BE9F-47D9-8E99-31162B3B0DBA}|Debug\\Debug.vcxproj|D:\\Resources_GT\\TCP\\Debug\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
       "RelativeMoniker": "D:0:0:{557FB334-BE9F-47D9-8E99-31162B3B0DBA}|Debug\\Debug.vcxproj|solutionrelative:Debug\\main.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
     }
@@ -14,20 +22,45 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Resources_GT\\TCP\\main.cpp",
+              "RelativeDocumentMoniker": "main.cpp",
+              "ToolTip": "D:\\Resources_GT\\TCP\\main.cpp",
+              "RelativeToolTip": "main.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-12T10:28:49.997Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "main.cpp",
+              "DocumentMoniker": "D:\\Resources_GT\\TCP\\TCP_Client\\main.cpp",
+              "RelativeDocumentMoniker": "TCP_Client\\main.cpp",
+              "ToolTip": "D:\\Resources_GT\\TCP\\TCP_Client\\main.cpp",
+              "RelativeToolTip": "TCP_Client\\main.cpp",
+              "ViewState": "AgIAADAAAAAAAAAAAAAAAC0AAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2025-04-12T10:28:48.276Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "main.cpp",
               "DocumentMoniker": "D:\\Resources_GT\\TCP\\Debug\\main.cpp",
               "RelativeDocumentMoniker": "Debug\\main.cpp",
               "ToolTip": "D:\\Resources_GT\\TCP\\Debug\\main.cpp",
               "RelativeToolTip": "Debug\\main.cpp",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
-              "WhenOpened": "2025-04-03T14:16:42.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-04-03T14:16:42.665Z"
             }
           ]
         }

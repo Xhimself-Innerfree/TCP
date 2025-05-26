@@ -2,7 +2,7 @@
 <Project>
   <ProjectOutputs>
     <ProjectOutput>
-      <FullPath>D:\GT\TCP\x64\Debug\TCP_Server.exe</FullPath>
+      <FullPath>D:\Resources_GT\TCP\x64\Debug\TCP_Server.exe</FullPath>
     </ProjectOutput>
   </ProjectOutputs>
   <ContentFiles />
