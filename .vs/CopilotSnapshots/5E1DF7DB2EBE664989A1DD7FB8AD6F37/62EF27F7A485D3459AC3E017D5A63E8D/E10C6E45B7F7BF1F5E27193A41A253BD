@@ -1,0 +1,61 @@
+﻿#include <stdio.h>
+#include <Ws2tcpip.h>
+#include <winsock2.h>
+#define HELLO_PORT  2222   
+#define HELLO_GROUP "224.0.0.1"    
+#pragma comment(lib,"ws2_32.lib")
+
+int main(int argc, char* argv[])
+{
+    WSADATA     wsaData;
+    WORD wVersionRequested;
+    wVersionRequested = MAKEWORD(1, 1);
+    // Initialize Windows Sockets API (Winsock)
+    WSAStartup(0x0202, &wsaData);
+    int l_nCilect;
+
+    // Set up the destination address structure for IPv6 UDP
+    struct sockaddr_in6 addr = { AF_INET6, htons(6060) };
+
+    // Create a UDP socket using IPv6
+    if ((l_nCilect = socket(AF_INET6, SOCK_DGRAM, 0)) < 0)
+    {
+        // Socket creation failed
+        perror("Socket creation failed");
+        exit(1);
+    }
+    // Convert the IPv6 multicast address from text to binary form and set it in the address structure
+    inet_pton(AF_INET6, "ff02::2", &addr.sin6_addr);
+
+    char message[128];
+    int l_naddLen = sizeof(addr);
+    while (1)
+    {
+        // Prepare the message to send
+        strcpy_s(message, "hello");
+        // Send the message to the multicast group
+        int l_nLen = sendto(l_nCilect, message, strlen(message), 0, (struct sockaddr*)&addr, sizeof(addr));
+        if (l_nLen < 0)
+        {
+            // Sending failed
+            perror("Send failed");
+            exit(1);
+        }
+        printf("Send %s\n", message);
+        Sleep(1000); // Wait for 1 second
+
+        // Receive a response from the receiver
+        int l_nReadLen = recvfrom(l_nCilect, message, strlen(message), 0, (struct sockaddr*)&addr, &l_naddLen);
+        if (l_nReadLen < 0)
+        {
+            // Receiving failed
+            perror("Receive failed");
+            exit(1);
+        }
+        message[l_nReadLen] = '\0'; // Null-terminate the received string
+        printf("%s\n", message);
+
+    }
+
+    return 0;
+}

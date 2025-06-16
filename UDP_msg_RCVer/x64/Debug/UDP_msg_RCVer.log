@@ -1,0 +1,3 @@
+﻿  main.cpp
+D:\Resources_GT\TCP\UDP_msg_RCVer\main.cpp(23,28): warning C4244: “=”: 从“SOCKET”转换到“int”，可能丢失数据
+  UDP_msg_RCVer.vcxproj -> D:\Resources_GT\TCP\x64\Debug\UDP_msg_RCVer.exe
